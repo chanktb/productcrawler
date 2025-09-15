@@ -40,7 +40,7 @@
         },
         {
             "url": "https://nowbestshirt.com/",
-            "selector": ".row.large-columns-5.medium-columns-3.small-columns-2.row-small.slider.row-slider.slider-nav-simple a.woocommerce-LoopProduct-link.woocommerce-loop-product__link"
+            "selector": ".row.large-columns-5.medium-columns-3.small-columns-2.row-small.slider.row-slider.slider-nav-reveal a.woocommerce-LoopProduct-link.woocommerce-loop-product__link"
         },
         {
             "url": "https://orionshirt.com/",
