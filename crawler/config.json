@@ -67,7 +67,15 @@
             "selector": "a.porto-tb-link"
         },
         {
-            "url": "https://teeslocal.com/",
+            "url": "https://teeslocal.com/best-item-today/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://teeslocal.com/new-arrivals/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://teeslocal.com/latest-products/",
             "selector": ".woocommerce-LoopProduct-link"
         },
         {
