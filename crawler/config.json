@@ -79,6 +79,14 @@
             "selector": ".woocommerce-LoopProduct-link"
         },
         {
+            "url": "https://teeslocal.com/graphic-t-shirt/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
+            "url": "https://teeslocal.com/t-shirts/",
+            "selector": ".woocommerce-LoopProduct-link"
+        },
+        {
             "url": "https://teleteeshirt.com/",
             "selector": "a.woocommerce-LoopProduct-link"
         }
