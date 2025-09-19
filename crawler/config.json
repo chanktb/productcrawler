@@ -15,6 +15,10 @@
             "selector": ".woocommerce-LoopProduct-link"
         },
         {
+            "url": "https://geekteesus.com/",
+            "selector": ".row.large-columns-5.medium-columns-3.small-columns-2.row-xsmall a.woocommerce-LoopProduct-link.woocommerce-loop-product__link"
+        },
+        {
             "url": "https://geekteesus.com/ornament/",
             "selector": ".woocommerce-LoopProduct-link"
         },
