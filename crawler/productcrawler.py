@@ -219,14 +219,24 @@ if __name__ == "__main__":
 
     for url_data in sites_to_crawl:
         if shutdown_requested: break
-        try:
-            domain = urlparse(url_data['url']).netloc
-            print(f"\nProcessing domain: {domain}")
-            urls = fetch_urls(url_data, use_proxy, proxy_template)
-            new_urls, total_urls = save_urls(domain, urls)
-            urls_summary[domain] = {'new_count': new_urls, 'total_count': total_urls}
-            total_new_urls += new_urls
-        except Exception as e:
+    try:
+        domain = urlparse(url_data['url']).netloc
+        print(f"\nProcessing domain: {domain} ({url_data['url']})") # Thêm URL cụ thể để dễ theo dõi
+        urls = fetch_urls(url_data, use_proxy, proxy_template)
+        new_urls, total_urls = save_urls(domain, urls)
+    
+        # --- ĐOẠN SỬA LỖI ---
+        # Nếu domain chưa có trong summary, hãy khởi tạo nó
+        if domain not in urls_summary:
+            urls_summary[domain] = {'new_count': 0, 'total_count': 0}
+    
+        # Cộng dồn số URL mới và cập nhật tổng số cuối cùng
+        urls_summary[domain]['new_count'] += new_urls
+        urls_summary[domain]['total_count'] = total_urls # Luôn gán tổng số mới nhất
+        # --- KẾT THÚC SỬA LỖI ---
+                
+        total_new_urls += new_urls
+    except Exception as e:
             print(f"!!! ERROR processing {url_data.get('url', 'N/A')}: {e}")
     # ... (Hết vòng lặp for) ...
 
