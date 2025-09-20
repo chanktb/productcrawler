@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   schedule:
     # Chay moi 6 tieng mot lan
-    - cron: "*/2 0-16 * * *"
+    - cron: "*/3 0-16 * * *"
 
 # Dinh nghia cac cong viec can thuc hien
 jobs:
